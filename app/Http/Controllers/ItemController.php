@@ -13,6 +13,13 @@ use App\Models\Tag;
 
 class ItemController extends Controller
 {
+    //public function __construct()
+    //{
+        //$this->middleware('auth')->only();
+       //$this->middleware('auth')->except('index');
+        //$this->middleware('auth');
+    //}
+
     public function create(){
         $categories = Category::all();
         return view('item.form', compact('categories'));
